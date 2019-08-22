@@ -117,6 +117,8 @@
          font-size: 0.8em
    &-mobile
       display: none
+   &-main-nav__collapse
+      display: none
 
 @media screen and (max-width: 1024px)
    .header
@@ -131,14 +133,42 @@
          justify-self: end
          align-self: center
          margin-right: 30px
+         &_active .header-mobile__collapse-board
+            &:nth-child(1)
+               transform: translate(0px, 9px) rotate(45deg)
+               height: 4px
+            &:nth-child(2), &:nth-child(3)
+               display: none
+            &:nth-child(4)
+               transform: translate(0px, -9px) rotate(-45deg)
+               height: 4px          
          &__collapse-board
             height: 2px
             width: 100%
             background-color: #fff
             border-radius: 2px
-            transition: 0.2s ease all
          &:hover .header-mobile__collapse-board
             background-color: #17609c 
+      &-main
+         &-nav__collapse
+            position: absolute
+            grid-template-rows: 1fr 1fr 1fr
+            z-index: 999
+            height: 100px
+            width: 30%
+            background: #22314b
+            right: 0
+            top: 10%
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+            text-align: center   
+            transition: .2s ease color
+            a
+               &:hover
+                  color: #ee602a
+         &_active
+            display: grid
+
 
 
 
