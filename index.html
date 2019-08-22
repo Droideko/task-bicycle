@@ -19,6 +19,12 @@
                <img src="img/logo.png" alt="logo">
             </a>
          </div>
+         <a href="#" class="header-mobile">
+            <div class="header-mobile__collapse-board"></div>
+            <div class="header-mobile__collapse-board"></div>
+            <div class="header-mobile__collapse-board"></div>
+            <div class="header-mobile__collapse-board"></div>
+         </a>
          <div class="header-menu">
             <ul class="header-menu__list">
                <li class="header-menu__item">
@@ -65,7 +71,6 @@
          </div>
       </div>
    </header>
-
    <div class="swiper-container">
       <div class="swiper-wrapper">
          <div class="swiper-slide"></div>
@@ -76,7 +81,6 @@
       </div>
       <div class="swiper-pagination"></div>
    </div>
-
    <section class="advantage">
       <div class="advantage-container">
          <h2 class="advantage-title">Наши премущества</h1>
@@ -136,11 +140,13 @@
       <div class="contacts-container">
          <h3 class="contacts__title">Нужна консультация?</h3>
          <p class="contacts__text">Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
-         <form action="name.aspx" method="POST" name="form1" class="contacts-form">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="number" name="phone" placeholder="Телефон">
-            <input type="submit" name="submit" value="ОТПРАВИТЬ">
-         </form>
+         <div class="contacts__inner-form">
+            <form action="name.aspx" method="POST" name="form1" class="contacts__form">
+               <input type="text" name="name" autocomplete="off" placeholder="Имя">
+               <input type="text" name="phone" autocomplete="off" placeholder="Телефон">
+               <input type="submit" name="submit" value="ОТПРАВИТЬ">
+            </form>
+         </div> 
       </div>
    </section>
    <footer class="footer">

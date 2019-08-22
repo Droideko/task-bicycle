@@ -16,7 +16,11 @@
       font-family: Roboto Regular, sans-serif
       text-align: center
       padding-top: 25px
-   &-form
+   &__inner-form
+      display: grid
+      justify-items: center
+   &__form
+      width: 700px
       display: grid
       grid-template-columns: 1fr 1fr 1fr
       padding-top: 35px
@@ -38,7 +42,7 @@
             border-bottom: none
             color: #ffffff
             background-color: #ee602a
-            width: 60%
+            width: 80%
             cursor: pointer
             transition: 0.2s ease box-shadow, 0.3s ease border-radius
             &:hover

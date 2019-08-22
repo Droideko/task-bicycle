@@ -115,6 +115,34 @@
          align-self: center
          font-family: Myriad Pro
          font-size: 0.8em
+   &-mobile
+      display: none
+
+@media screen and (max-width: 1024px)
+   .header
+      &-container
+         grid-template-columns: 1fr 5fr
+      &-menu, &-form, &-social
+         display: none
+      &-mobile
+         display: grid
+         width: 37px
+         height: 35px
+         justify-self: end
+         align-self: center
+         margin-right: 30px
+         &__collapse-board
+            height: 2px
+            width: 100%
+            background-color: #fff
+            border-radius: 2px
+            transition: 0.2s ease all
+         &:hover .header-mobile__collapse-board
+            background-color: #17609c 
+
+
+
+      
 
    
 
